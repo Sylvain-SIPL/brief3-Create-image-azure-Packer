@@ -1,0 +1,27 @@
+L'objectif du brief est de créer une image personnalisé d'un environnement Linux en ajoutant à l'image officiel un serveur web 
+et un fichier index.html disponible en ressources.
+
+​
+
+Pour ce faire :
+
+
+D'abord nous analyserons le ficher jl_v1_pvamd.pkr.hcl qui crée un template Proxmox, nous rechercherons dans ce fichier :
+
+    - la definition du provider
+
+    - la méthode de connexion à l'hyperviseur
+
+    - les paramètres de la VM.
+
+​
+
+Puis en consultant la ressource "Hashicorp" puis la ressource "Azure"
+
+nous créerons l'image souhaité.
+
+​
+
+Et enfin nous créerons un fichier terraform pour la création d'une VM Azure utilisant l'image précèdement créé.
+
+​
